@@ -1,0 +1,12 @@
+pipeline{
+agent {label 'node2'}
+stages{  
+stage("file creation"){
+steps{    
+sh "touch /test/devops/{1..10}.txt" 
+}
+}
+}
+}  
+  
+  
