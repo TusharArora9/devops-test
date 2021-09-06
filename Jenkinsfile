@@ -6,5 +6,10 @@ steps{
 sh "mkdir /test/devops"
 }
 }
+stage("file creation"){
+steps{
+sh "touch {1..10}.txt"
+}
+}
 }
 }
